@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "41f6d80d671bc8a9dfaa13f41ab5aadc")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7248590334:AAGmrgRmoPFgDDxik-9yHf3hcJYWltxPoFU")
 
 PICS = (environ.get('PICS', 'https://ibb.co/vxzDdDxf')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8023740449,7612404009').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "HRfilestorebot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -59,8 +59,8 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "linkcents.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "a1a66e18640fadc64ba361de86af312adf682e48") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
 
 # Website Info:
